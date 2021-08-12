@@ -55,7 +55,7 @@ function game() {
         foodY = Math.floor(Math.random() * tileCount);
     }
 
-    ctx.fillStyle="blue";
+    ctx.fillStyle=`rgb(200, ${Math.floor(Math.random() * 255)}, 200)`;
     ctx.fillRect(foodX * gridSize, foodY * gridSize, gridSize - 2, gridSize - 2);
 }
 
